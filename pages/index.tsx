@@ -12,7 +12,8 @@ import {
 } from "react-bootstrap";
 import navigationCards from "../public/data/navigationCards.json";
 import Navigation from "../components/Navigation";
-
+import Link from "next/link";
+import Image from "next/image";
 interface NavigationCards {
   title: string;
   description: string;
@@ -31,17 +32,27 @@ export default function Home() {
         <Navigation />
       </nav>
       <main>
-        <section style={{ textAlign: "center", marginBottom: "27em" }}>
-          <h1 style={{ fontSize: "6em", paddingTop: "2em" }}>DadJokes.io</h1>
+        <section
+          style={{
+            textAlign: "center",
+            marginBottom: "27em",
+            marginTop: "13em",
+          }}
+        >
+          <Image src='/images/DadJokesLogo.svg' width='600em' height='100%' />
           <blockquote>
             "good as it gets" <br /> - Kegen Guyll
           </blockquote>
-          <Button style={{ width: "10em", marginRight: "1em" }}>
-            Documentation
-          </Button>
-          <Button style={{ width: "10em" }} variant='secondary'>
-            Showcase
-          </Button>
+          <div>
+            <Link href='/documentation/getting-started'>
+              <Button style={{ width: "10em", marginRight: "1em" }}>
+                Documentation
+              </Button>
+            </Link>
+            <Button style={{ width: "10em" }} variant='secondary'>
+              Showcase
+            </Button>
+          </div>
         </section>
         <section style={{ textAlign: "center", marginBottom: "27em" }}>
           <h1>Why DadJokes.io</h1>

@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Container } from "react-bootstrap";
+import Navigation from "../components/Navigation";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -14,6 +16,7 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'
             rel='stylesheet'
           />
+          <link rel='shortcut icon' href='/favicon.ico' />
         </Head>
         <body>
           <Main />

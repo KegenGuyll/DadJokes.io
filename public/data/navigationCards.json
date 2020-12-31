@@ -2,21 +2,21 @@
   {
     "title": "Random Joke",
     "description": "Returns a JSON object that contains the 'setup, punchline, type and id'",
-    "documentationLink": "#"
+    "documentationLink": "/documentation/endpoints/random-jokes"
   },
   {
     "title": "Joke By Id",
     "description": "Returns a joke object with a specific ID.",
-    "documentationLink": "#"
+    "documentationLink": "/documentation/endpoints/joke-by-id"
   },
   {
     "title": "Joke By Type",
     "description": "Returns a joke object randomly with a specific type.",
-    "documentationLink": "#"
+    "documentationLink": "/documentation/endpoints/joke-by-type"
   },
   {
     "title": "Search Joke",
     "description": "Returns a list of jokes matching your term.",
-    "documentationLink": "#"
+    "documentationLink": "/documentation/endpoints/search-jokes"
   }
 ]

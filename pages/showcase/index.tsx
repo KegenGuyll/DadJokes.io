@@ -10,9 +10,6 @@ export default function Showcase() {
         <title>DadJokes.io Showcase</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav>
-        <Navigation />
-      </nav>
       <main></main>
       <style jsx global>{`
         html,
