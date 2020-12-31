@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Random Joke",
+    "description": "Returns a JSON object that contains the 'setup, punchline, type and id'",
+    "documentationLink": "#"
+  },
+  {
+    "title": "Joke By Id",
+    "description": "Returns a joke object with a specific ID.",
+    "documentationLink": "#"
+  },
+  {
+    "title": "Joke By Type",
+    "description": "Returns a joke object randomly with a specific type.",
+    "documentationLink": "#"
+  },
+  {
+    "title": "Search Joke",
+    "description": "Returns a list of jokes matching your term.",
+    "documentationLink": "#"
+  }
+]
