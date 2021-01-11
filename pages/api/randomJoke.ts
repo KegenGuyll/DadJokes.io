@@ -15,9 +15,7 @@ interface HttpResponse<T> extends Response {
 }
 
 export async function RandomJokes() {
-  return await http<Payload>(
-    "https://dad-jokes69420.herokuapp.com/api/random/joke"
-  );
+  return await http<Payload>('https://ghostdemo.xyz/api/random/joke');
 }
 
 export async function http<T>(request: RequestInfo): Promise<HttpResponse<T>> {
