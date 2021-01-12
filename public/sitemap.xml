@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dadjokes.io</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/documentation/getting-started</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/showcase/index</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/documentation/endpoints/joke-by-id</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/documentation/endpoints/joke-by-type</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/documentation/endpoints/random-jokes</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/documentation/endpoints/search-jokes</loc>
+  </url>
+</urlset>
