@@ -12,7 +12,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Dad Jokes</title>
           <meta name='title' content='Dad Jokes' />
           <meta name='description' content='One of the best Dad Jokes APIs' />
 
