@@ -46,6 +46,8 @@ class MyDocument extends Document {
         })(window,document,'script','dataLayer','GTM-MH9P3QX');`,
             }}
           />
+        </Head>
+        <body>
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-MH9P3QX"
@@ -54,8 +56,6 @@ class MyDocument extends Document {
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
-        </Head>
-        <body>
           <Main />
           <NextScript />
         </body>
