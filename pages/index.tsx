@@ -1,5 +1,5 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
+import React from 'react';
 import {
   Button,
   Card,
@@ -9,11 +9,11 @@ import {
   Nav,
   Navbar,
   Row,
-} from "react-bootstrap";
-import navigationCards from "../public/data/navigationCards.json";
-import Navigation from "../components/Navigation";
-import Link from "next/link";
-import Image from "next/image";
+} from 'react-bootstrap';
+import navigationCards from '../public/data/navigationCards.json';
+import Navigation from '../components/Navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 interface NavigationCards {
   title: string;
   description: string;
@@ -26,7 +26,7 @@ export default function Home() {
     <Container>
       <Head>
         <title>DadJokes.io</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
         <Navigation />
@@ -34,38 +34,40 @@ export default function Home() {
       <main>
         <section
           style={{
-            textAlign: "center",
-            marginBottom: "27em",
-            marginTop: "13em",
+            textAlign: 'center',
+            marginBottom: '27em',
+            marginTop: '13em',
           }}
         >
-          <Image src='/images/DadJokesLogo.svg' width='600em' height='100%' />
+          <Image src="/images/DadJokesLogo.svg" width="600em" height="100%" />
           <blockquote>
             "good as it gets" <br /> - Kegen Guyll
           </blockquote>
           <div>
-            <Link href='/documentation/getting-started'>
-              <Button style={{ width: "10em", marginRight: "1em" }}>
+            <Link href="/documentation/getting-started">
+              <Button style={{ width: '10em', marginRight: '1em' }}>
                 Documentation
               </Button>
             </Link>
-            <Button style={{ width: "10em" }} variant='secondary'>
-              Showcase
-            </Button>
+            <Link href="/showcase">
+              <Button style={{ width: '10em' }} variant="secondary">
+                Showcase
+              </Button>
+            </Link>
           </div>
         </section>
-        <section style={{ textAlign: "center", marginBottom: "27em" }}>
+        <section style={{ textAlign: 'center', marginBottom: '27em' }}>
           <h1>Why DadJokes.io</h1>
-          <blockquote style={{ marginBottom: "1em" }}>
+          <blockquote style={{ marginBottom: '1em' }}>
             Ranked 3rd on Rakuten "top jokes API's" 🤷
           </blockquote>
           <Row>
             {RouteCards.map((item, index) => (
-              <Col lg={4} xs={12} style={{ textAlign: "center" }} key={index}>
+              <Col lg={4} xs={12} style={{ textAlign: 'center' }} key={index}>
                 <Card
                   style={{
-                    textAlign: "left",
-                    marginTop: "2em",
+                    textAlign: 'left',
+                    marginTop: '2em',
                   }}
                 >
                   <Card.Body>
@@ -80,7 +82,7 @@ export default function Home() {
             ))}
           </Row>
         </section>
-        <section style={{ marginBottom: "27em" }}>
+        <section style={{ marginBottom: '27em' }}>
           <Row>
             <Col lg={8} xs={12}>
               <h1>Be the first to find out about new updates</h1>
@@ -93,11 +95,11 @@ export default function Home() {
               <Form>
                 <Form.Group>
                   <Form.Control
-                    type='text'
-                    placeholder='you@domain.com'
+                    type="text"
+                    placeholder="you@domain.com"
                   ></Form.Control>
                 </Form.Group>
-                <Button variant='dark' type='submit'>
+                <Button variant="dark" type="submit">
                   Subscribe
                 </Button>
               </Form>
@@ -111,7 +113,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: "Montserrat", sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         * {
