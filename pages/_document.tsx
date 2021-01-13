@@ -46,6 +46,20 @@ class MyDocument extends Document {
         })(window,document,'script','dataLayer','GTM-MH9P3QX');`,
             }}
           />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-3YVF0J1HKW"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3YVF0J1HKW');
+        `,
+            }}
+          />
         </Head>
         <body>
           <noscript>
