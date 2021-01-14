@@ -26,31 +26,28 @@ export default function Home() {
     <Container>
       <Head>
         <title>DadJokes.io</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav>
-        <Navigation />
-      </nav>
+      <Navigation />
       <main>
         <section
           style={{
             textAlign: 'center',
             marginBottom: '27em',
             marginTop: '13em',
-          }}
-        >
-          <Image src="/images/DadJokesLogo.svg" width="600em" height="100%" />
+          }}>
+          <Image src='/images/DadJokesLogo.svg' width='600em' height='100%' />
           <blockquote>
             "good as it gets" <br /> - Kegen Guyll
           </blockquote>
           <div>
-            <Link href="/documentation/getting-started">
+            <Link href='/documentation/getting-started'>
               <Button style={{ width: '10em', marginRight: '1em' }}>
                 Documentation
               </Button>
             </Link>
-            <Link href="/showcase">
-              <Button style={{ width: '10em' }} variant="secondary">
+            <Link href='/showcase/random-jokes'>
+              <Button style={{ width: '10em' }} variant='secondary'>
                 Showcase
               </Button>
             </Link>
@@ -68,8 +65,7 @@ export default function Home() {
                   style={{
                     textAlign: 'left',
                     marginTop: '2em',
-                  }}
-                >
+                  }}>
                   <Card.Body>
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text>{item.description}</Card.Text>
@@ -95,11 +91,10 @@ export default function Home() {
               <Form>
                 <Form.Group>
                   <Form.Control
-                    type="text"
-                    placeholder="you@domain.com"
-                  ></Form.Control>
+                    type='text'
+                    placeholder='you@domain.com'></Form.Control>
                 </Form.Group>
-                <Button variant="dark" type="submit">
+                <Button variant='dark' type='submit'>
                   Subscribe
                 </Button>
               </Form>
