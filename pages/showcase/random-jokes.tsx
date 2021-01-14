@@ -9,7 +9,7 @@ const Showcase = () => {
   return (
     <Container>
       <Head>
-        <title>DadJokes.io Showcase</title>
+        <title>DadJokes.io Showcase RandomJokes</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <nav>
