@@ -1,6 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { Container } from 'react-bootstrap';
-import Navigation from '../components/Navigation';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -49,8 +47,6 @@ class MyDocument extends Document {
         })(window,document,'script','dataLayer','GTM-MH9P3QX');`,
             }}
           />
-<<<<<<< Updated upstream
-=======
           <script
             async
             src='https://www.googletagmanager.com/gtag/js?id=G-3YVF0J1HKW'
@@ -67,7 +63,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
->>>>>>> Stashed changes
           <noscript>
             <iframe
               src='https://www.googletagmanager.com/ns.html?id=GTM-MH9P3QX'
