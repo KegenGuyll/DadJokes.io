@@ -131,7 +131,7 @@ const JokeByTypeShowcase = () => {
             </Card.Body>
           )}
           <Card.Footer>
-            <Link href='/documentation/endpoints/joke-by-type'>
+            <Link href='/docs/documentation/endpoints/joke-by-type'>
               <Button variant='secondary'>Documentation</Button>
             </Link>
           </Card.Footer>

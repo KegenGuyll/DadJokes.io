@@ -134,7 +134,7 @@ const SearchJokehowcase = () => {
             </Card.Body>
           )}
           <Card.Footer>
-            <Link href='/documentation/endpoints/search-jokes'>
+            <Link href='/docs/documentation/endpoints/search-jokes'>
               <Button variant='secondary'>Documentation</Button>
             </Link>
           </Card.Footer>

@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import React from "react";
-import DocsLayout from "../../../components/DocsLayout";
-import EndpointGenericWriteup from "../../../components/EndpointGenericWriteup";
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import DocsLayout from '../../../../components/DocsLayout';
+import EndpointGenericWriteup from '../../../../components/EndpointGenericWriteup';
 
 export default function SearchJokes() {
   return (
@@ -13,8 +13,7 @@ export default function SearchJokes() {
         <meta name='description' content='DadJokes.io search jokes endpoint' />
         <meta
           name='keywords'
-          content='DadJokes, API, Search Jokes, Endpoint'
-        ></meta>
+          content='DadJokes, API, Search Jokes, Endpoint'></meta>
         <meta name='author' content='Kegen Guyll'></meta>
       </Head>
       <h1>Search Jokes - </h1>
