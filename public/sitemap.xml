@@ -13,6 +13,22 @@
   </url>
 
   <url>
+    <loc>https://dadjokes.io/showcase/joke-by-id</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/showcase/joke-by-type</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/showcase/random-jokes</loc>
+  </url>
+
+  <url>
+    <loc>https://dadjokes.io/showcase/search-jokes</loc>
+  </url>
+
+  <url>
     <loc>https://dadjokes.io/documentation/endpoints/joke-by-id</loc>
   </url>
 
