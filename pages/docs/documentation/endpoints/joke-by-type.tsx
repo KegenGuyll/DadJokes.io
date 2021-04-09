@@ -1,7 +1,7 @@
-import Head from "next/head";
-import React from "react";
-import DocsLayout from "../../../components/DocsLayout";
-import EndpointGenericWriteup from "../../../components/EndpointGenericWriteup";
+import Head from 'next/head';
+import React from 'react';
+import DocsLayout from '../../../../components/DocsLayout';
+import EndpointGenericWriteup from '../../../../components/EndpointGenericWriteup';
 
 export default function JokeByType() {
   return (
@@ -12,8 +12,7 @@ export default function JokeByType() {
         <meta name='description' content='DadJokes.io Joke By Type endpoint' />
         <meta
           name='keywords'
-          content='DadJokes, API, Joke By Type, Endpoint'
-        ></meta>
+          content='DadJokes, API, Joke By Type, Endpoint'></meta>
         <meta name='author' content='Kegen Guyll'></meta>
       </Head>
       <h1>Joke By Type - </h1>

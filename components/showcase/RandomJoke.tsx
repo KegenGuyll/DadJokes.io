@@ -107,7 +107,7 @@ const RandomJokeShowcase = () => {
             <Button style={{ marginRight: '1em' }} onClick={fetchRandomJoke}>
               Next Joke
             </Button>
-            <Link href='/documentation/endpoints/random-jokes'>
+            <Link href='/docs/documentation/endpoints/random-jokes'>
               <Button variant='secondary'>Documentation</Button>
             </Link>
           </Card.Footer>

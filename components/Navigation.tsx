@@ -6,19 +6,19 @@ import Link from 'next/link';
 const Navigation = () => {
   return (
     <Navbar className='justify-content-between' expand='lg'>
-      <Link href='/'>
-        <Navbar.Brand href='/' style={{ cursor: 'pointer' }}>
+      <Link href='/docs'>
+        <Navbar.Brand href='/docs' style={{ cursor: 'pointer' }}>
           DadJokes.io
         </Navbar.Brand>
       </Link>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav style={{ textAlign: 'center' }} className='mr-auto'>
-          <Link href='/showcase/random-jokes'>
-            <Nav.Link href='/showcase/random-jokes'>Showcase</Nav.Link>
+          <Link href='/docs/showcase/random-jokes'>
+            <Nav.Link href='/docs/showcase/random-jokes'>Showcase</Nav.Link>
           </Link>
-          <Link href='/documentation/getting-started'>
-            <Nav.Link href='/documentation/getting-started'>Docs</Nav.Link>
+          <Link href='/docs/documentation/getting-started'>
+            <Nav.Link href='/docs/documentation/getting-started'>Docs</Nav.Link>
           </Link>
           <Nav.Link href='#link'>Blog</Nav.Link>
         </Nav>

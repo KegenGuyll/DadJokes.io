@@ -1,17 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
-import {
-  Button,
-  Card,
-  Col,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  Row,
-} from 'react-bootstrap';
-import navigationCards from '../public/data/navigationCards.json';
-import Navigation from '../components/Navigation';
+import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
+import navigationCards from '../../public/data/navigationCards.json';
+import Navigation from '../../components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 interface NavigationCards {
@@ -41,12 +32,12 @@ export default function Home() {
             "good as it gets" <br /> - Kegen Guyll
           </blockquote>
           <div>
-            <Link href='/documentation/getting-started'>
+            <Link href='docs/documentation/getting-started'>
               <Button style={{ width: '10em', marginRight: '1em' }}>
                 Documentation
               </Button>
             </Link>
-            <Link href='/showcase/random-jokes'>
+            <Link href='docs/showcase/random-jokes'>
               <Button style={{ width: '10em' }} variant='secondary'>
                 Showcase
               </Button>

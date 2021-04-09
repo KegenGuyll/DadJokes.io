@@ -1,7 +1,7 @@
-import Head from "next/head";
-import React from "react";
-import DocsLayout from "../../../components/DocsLayout";
-import EndpointGenericWriteup from "../../../components/EndpointGenericWriteup";
+import Head from 'next/head';
+import React from 'react';
+import DocsLayout from '../../../../components/DocsLayout';
+import EndpointGenericWriteup from '../../../../components/EndpointGenericWriteup';
 
 export default function RandomJoke() {
   return (
@@ -12,8 +12,7 @@ export default function RandomJoke() {
         <meta name='description' content='DadJokes.io random joke endpoint' />
         <meta
           name='keywords'
-          content='DadJokes, API, Random Joke, Endpoint'
-        ></meta>
+          content='DadJokes, API, Random Joke, Endpoint'></meta>
         <meta name='author' content='Kegen Guyll'></meta>
       </Head>
       <h1>Random Joke - </h1>

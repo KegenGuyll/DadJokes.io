@@ -12,39 +12,41 @@ const ShowcaseNavigation = () => {
       fill
       variant='tabs'
       defaultActiveKey={router.pathname}>
-      <Link href='/showcase/random-jokes'>
+      <Link href='/docs/showcase/random-jokes'>
         <Nav.Item>
           <Nav.Link
-            eventKey='/showcase/random-jokes'
-            href='/showcase/random-jokes'>
+            eventKey='/docs/showcase/random-jokes'
+            href='/docs/showcase/random-jokes'>
             Random Joke
           </Nav.Link>
         </Nav.Item>
       </Link>
 
-      <Link href='/showcase/joke-by-id'>
+      <Link href='/docs/showcase/joke-by-id'>
         <Nav.Item>
-          <Nav.Link eventKey='/showcase/joke-by-id' href='/showcase/joke-by-id'>
+          <Nav.Link
+            eventKey='/docs/showcase/joke-by-id'
+            href='/showcase/joke-by-id'>
             Joke By Id
           </Nav.Link>
         </Nav.Item>
       </Link>
 
-      <Link href='/showcase/joke-by-type'>
+      <Link href='/docs/showcase/joke-by-type'>
         <Nav.Item>
           <Nav.Link
-            eventKey='/showcase/joke-by-type'
-            href='/showcase/joke-by-type'>
+            eventKey='/docs/showcase/joke-by-type'
+            href='/docs/showcase/joke-by-type'>
             Joke By Type
           </Nav.Link>
         </Nav.Item>
       </Link>
 
-      <Link href='/showcase/search-jokes'>
+      <Link href='/docs/showcase/search-jokes'>
         <Nav.Item>
           <Nav.Link
-            eventKey='/showcase/search-jokes'
-            href='/showcase/search-jokes'>
+            eventKey='/docs/showcase/search-jokes'
+            href='/docs/showcase/search-jokes'>
             Search Jokes
           </Nav.Link>
         </Nav.Item>
