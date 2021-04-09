@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import DocsLayout from '../../../../components/DocsLayout';
-import EndpointGenericWriteup from '../../../../components/EndpointGenericWriteup';
+import DocsLayout from '../../../../components/docs/DocsLayout';
+import EndpointGenericWriteup from '../../../../components/docs/EndpointGenericWriteup';
 
 export default function SearchJokes() {
   return (
