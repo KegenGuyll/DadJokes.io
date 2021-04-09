@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
 import { Container, Nav, NavDropdown } from 'react-bootstrap';
-import Navigation from '../../../components/Navigation';
-import JokeByIdShowcase from '../../../components/showcase/JokeById';
-import ShowcaseNavigation from '../../../components/showcase/Navigation';
-import RandomJokeShowcase from '../../../components/showcase/RandomJoke';
-import SearchJokehowcase from '../../../components/showcase/search-jokes';
+import Navigation from '../../../components/docs/Navigation';
+import JokeByIdShowcase from '../../../components/docs/showcase/JokeById';
+import ShowcaseNavigation from '../../../components/docs/showcase/Navigation';
+import RandomJokeShowcase from '../../../components/docs/showcase/RandomJoke';
+import SearchJokehowcase from '../../../components/docs/showcase/search-jokes';
 
 const Showcase = () => {
   return (

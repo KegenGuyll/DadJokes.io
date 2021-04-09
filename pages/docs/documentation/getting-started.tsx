@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Jumbotron, Container } from 'react-bootstrap';
-import DocsLayout from '../../../components/DocsLayout';
+import DocsLayout from '../../../components/docs/DocsLayout';
 
 export default function Documentation() {
   return (
