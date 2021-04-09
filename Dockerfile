@@ -1,4 +1,6 @@
+#!/bin/bash
 # Dockerfile
+
 
 # base image
 FROM node:alpine
