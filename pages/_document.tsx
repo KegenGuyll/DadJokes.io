@@ -13,6 +13,9 @@ class MyDocument extends Document {
           <link
             rel='stylesheet'
             href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'></link>
+          <link
+            href='https://fonts.googleapis.com/icon?family=Material+Icons'
+            rel='stylesheet'></link>
           <meta name='title' content='Dad Jokes' />
           <meta name='description' content='One of the best Dad Jokes APIs' />
 
