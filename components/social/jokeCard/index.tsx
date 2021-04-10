@@ -39,7 +39,7 @@ const JokeCard: React.FunctionComponent<Props> = ({
           <h2 className=' pb-16'>{setup}</h2>
           <h4 className='pb-16'>{punchline}</h4>
           <p>{`by, ${author} ${date}`}</p>
-          <Rate />
+          <Rate jokeId='1' />
         </Container>
       </Card.Body>
     </Card>
