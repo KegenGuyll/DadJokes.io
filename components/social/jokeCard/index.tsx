@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import TagComponent from './tag';
 import { Tag } from '../../../models/social/tags';
+import Rate from './rate';
 
 interface Props {
   tags: Array<Tag>;
@@ -25,8 +26,12 @@ const JokeCard: React.FunctionComponent<Props> = ({
       <Card.Body>
         <Container>
           <div className='flex flex-row pb-5'>
-            {tags.map(({ text, textColor, color, icon }) => (
-              <TagComponent textColor={textColor} color={color} icon={icon}>
+            {tags.map(({ text, textColor, color, icon }, index) => (
+              <TagComponent
+                key={index}
+                textColor={textColor}
+                color={color}
+                icon={icon}>
                 {text}
               </TagComponent>
             ))}
@@ -34,7 +39,7 @@ const JokeCard: React.FunctionComponent<Props> = ({
           <h2 className=' pb-16'>{setup}</h2>
           <h4 className='pb-16'>{punchline}</h4>
           <p>{`by, ${author} ${date}`}</p>
-          <p>Likes and Dislikes</p>
+          <Rate />
         </Container>
       </Card.Body>
     </Card>
