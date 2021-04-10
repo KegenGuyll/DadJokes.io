@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-const Rate: React.FunctionComponent = () => {
+interface Props {
+  jokeId: string;
+}
+
+const Rate: React.FunctionComponent<Props> = () => {
   const [like, setLike] = useState<boolean>(false);
   const [dislike, setDislike] = useState<boolean>(false);
 
