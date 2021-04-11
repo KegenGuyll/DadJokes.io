@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Navigation from '../components/social/Navigation';
 import JokeCard from '../components/social/jokeCard';
+import JokeSubmit from '../components/social/jokeSubmit';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </Head>
       <Navigation />
       <main>
+        <section>
+          <JokeSubmit />
+        </section>
         <section>
           <JokeCard
             punchline='No, I got them all cut!'
