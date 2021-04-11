@@ -5,8 +5,8 @@ import Link from 'next/link';
 const Navigation = () => {
   return (
     <Navbar className='justify-content-between' expand='lg'>
-      <Link href='/docs'>
-        <Navbar.Brand href='/docs' style={{ cursor: 'pointer' }}>
+      <Link href='/'>
+        <Navbar.Brand href='/' style={{ cursor: 'pointer' }}>
           DadJokes.io
         </Navbar.Brand>
       </Link>
