@@ -4,7 +4,7 @@ import { JokeByID } from '../../models/social/joke';
 
 export default function jokeByID(id: string) {
   const { data, error } = useSWR(
-    `http://localhost:8080/api/joke/${id}`,
+    `http://dadjokes-beta.herokuapp.com/api/joke/${id}`,
     fetcher
   );
 

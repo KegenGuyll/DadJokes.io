@@ -7,7 +7,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<JokeBody>) => {
   const limit = req.query.limit as string;
   try {
     const result: AxiosResponse<JokeBody> = await axios.get(
-      `http://localhost:8080/api/joke/pagination?skip=${skip}&limit=${limit}`
+      `http://dadjokes-beta.herokuapp.com/api/joke/pagination?skip=${skip}&limit=${limit}`
     );
 
     res.status(200).json(result.data);

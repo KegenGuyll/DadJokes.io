@@ -65,7 +65,7 @@ EditPost.getInitialProps = async (context) => {
   const postId = context.query.id;
 
   const res: AxiosResponse<JokeByID> = await axios.get(
-    `http://localhost:8080/api/joke/${postId}`
+    `http://dadjokes-beta.herokuapp.com/api/joke/${postId}`
   );
 
   return { joke: res.data.body };

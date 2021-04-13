@@ -16,7 +16,10 @@ const Login = () => {
   const submit = async (event: any) => {
     event.preventDefault();
     axios
-      .post('http://localhost:8080/api/user/login', { email, password })
+      .post('http://dadjokes-beta.herokuapp.com/api/user/login', {
+        email,
+        password,
+      })
       .then((res: AxiosResponse<PrivateUser>) => {
         const token = res.data.body.sessionToken;
 

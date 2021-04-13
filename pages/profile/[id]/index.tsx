@@ -139,7 +139,7 @@ UserProfile.getInitialProps = async (context) => {
   const userId = context.query.id;
 
   const res: AxiosResponse<UserBody> = await axios.get(
-    `http://localhost:8080/api/user/public/profile/${userId}`
+    `http://dadjokes-beta.herokuapp.com/api/user/public/profile/${userId}`
   );
 
   return { user: res.data.body };

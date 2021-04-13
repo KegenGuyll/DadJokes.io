@@ -4,7 +4,7 @@ import { JokeBody } from '../../models/social/joke';
 
 export default function randomJoke() {
   const { data, error } = useSWR(
-    `http://localhost:8080/api/random/joke`,
+    `http://dadjokes-beta.herokuapp.com/api/random/joke`,
     fetcher
   );
 

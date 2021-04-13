@@ -16,7 +16,6 @@ const Rate: React.FunctionComponent<Props> = ({ jokeId, likes }) => {
 
   useEffect(() => {
     likes.map((l) => {
-      console.log(l.id, _id);
       if (l.id === _id) setLike(true);
     });
   }, [jokeId, likes]);
