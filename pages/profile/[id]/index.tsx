@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { User, UserBody } from '../../../models/social/user';
 import ProfilePicture from '../../../components/social/jokeSubmit/profilePicture';
 import Navigation from '../../../components/social/Navigation';
-import { ProfilePostPreview } from '../profilePostPreview';
+import ProfilePostPreview from '../profilePostPreview';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
