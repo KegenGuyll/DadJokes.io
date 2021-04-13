@@ -2,11 +2,17 @@ import React from 'react';
 
 interface Props {
   photoUrl: string;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
-const ProfilePicture: React.FunctionComponent<Props> = ({ photoUrl }) => {
+const ProfilePicture: React.FunctionComponent<Props> = ({
+  photoUrl,
+  className,
+  style,
+}) => {
   return (
-    <div className='w-2/6 sm:w-2/12 px-4'>
+    <div style={style} className={className}>
       <img
         src={photoUrl}
         alt='Profile Picture'
