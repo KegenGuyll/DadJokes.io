@@ -6,7 +6,7 @@ interface Props {
   _id: string;
 }
 
-export const ProfilePostPreview: React.FunctionComponent<Props> = ({ _id }) => {
+const ProfilePostPreview: React.FunctionComponent<Props> = ({ _id }) => {
   const { joke, isLoading, isError } = useJokeById(_id);
   return (
     <>
@@ -23,3 +23,5 @@ export const ProfilePostPreview: React.FunctionComponent<Props> = ({ _id }) => {
     </>
   );
 };
+
+export default ProfilePostPreview;
