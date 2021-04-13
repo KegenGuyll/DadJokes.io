@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
-const endpoint = 'http://localhost:8080';
+const endpoint = 'http://dadjokes-beta.herokuapp.com';
 
 const fetch = async (config: AxiosRequestConfig) => {
   const token = localStorage.getItem('token');
