@@ -1,19 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
-import {
-  Button,
-  Card,
-  Col,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  Row,
-} from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import navigationCards from '../public/data/navigationCards.json';
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import EmailSubscribe from '../components/emailSubscribe';
 interface NavigationCards {
   title: string;
   description: string;
@@ -88,16 +80,7 @@ export default function Home() {
               </p>
             </Col>
             <Col lg={4} xs={12}>
-              <Form>
-                <Form.Group>
-                  <Form.Control
-                    type='text'
-                    placeholder='you@domain.com'></Form.Control>
-                </Form.Group>
-                <Button variant='dark' type='submit'>
-                  Subscribe
-                </Button>
-              </Form>
+              <EmailSubscribe />
             </Col>
           </Row>
         </section>
