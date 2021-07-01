@@ -42,7 +42,7 @@ const RandomJokeShowcase = () => {
 
   const fetchRandomJoke = () => {
     axios
-      .get('https://dad-jokes69420.herokuapp.com/api/random/joke')
+      .get('https://api.dadjokes.io/api/random/joke')
       .then((response: AxiosResponse<Payload>) => {
         setRandomJoke(response.data);
       });

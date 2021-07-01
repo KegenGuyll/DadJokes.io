@@ -31,11 +31,11 @@ const CustomToggle = React.forwardRef(
 const JokeByIdShowcase = () => {
   const [randomJoke, setRandomJoke] = useState<Payload>();
   const [displayResponse, setDisplayResponse] = useState<boolean>(false);
-  const [jokeId, setJokeId] = useState<string>('5f80ccd641785ba7c7d27b92');
+  const [jokeId, setJokeId] = useState<string>('60dd36169d829533ec301e49');
 
   const fetchRandomJoke = () => {
     axios
-      .get(`https://dad-jokes69420.herokuapp.com/api/joke/${jokeId}`)
+      .get(`https://api.dadjokes.io/api/joke/${jokeId}`)
       .then((response: AxiosResponse<Payload>) => {
         setRandomJoke(response.data);
       });

@@ -35,9 +35,7 @@ const JokeByTypeShowcase = () => {
 
   const fetchRandomJoke = () => {
     axios
-      .get(
-        `https://dad-jokes69420.herokuapp.com/api/joke/type/${jokeType}?limit=5`
-      )
+      .get(`https://api.dadjokes.io/api/joke/type/${jokeType}?limit=5`)
       .then((response: AxiosResponse<Payload>) => {
         setRandomJoke(response.data);
       });

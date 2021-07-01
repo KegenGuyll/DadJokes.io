@@ -35,9 +35,7 @@ const SearchJokehowcase = () => {
 
   const fetchRandomJoke = () => {
     axios
-      .get(
-        `https://dad-jokes69420.herokuapp.com/api/joke/search?term=${searchTerm}`
-      )
+      .get(`https://api.dadjokes.io/api/joke/search?term=${searchTerm}`)
       .then((response: AxiosResponse<Payload>) => {
         setRandomJoke(response.data);
       });

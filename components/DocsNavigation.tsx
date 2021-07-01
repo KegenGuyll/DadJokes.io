@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Collapse, Nav } from "react-bootstrap";
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Collapse, Nav } from 'react-bootstrap';
 
 export default function DocsNavigation() {
   const [openEndpoint, setOpenEndpoint] = useState<boolean>(true);
@@ -16,17 +16,15 @@ export default function DocsNavigation() {
       <Nav
         activeKey={router.pathname}
         style={{
-          height: "100vh",
-          overflowY: "scroll",
-          maxHeight: "50vh",
+          height: '100vh',
+          overflowY: 'scroll',
+          maxHeight: '50vh',
         }}
-        className='flex-column'
-      >
+        className='flex-column'>
         <Link href='/documentation/getting-started'>
           <Nav.Link
             eventKey='/documentation/getting-started'
-            href='/getting-started'
-          >
+            href='/getting-started'>
             Getting Started
           </Nav.Link>
         </Link>
@@ -36,6 +34,11 @@ export default function DocsNavigation() {
             <Link href='/documentation/endpoints/random-jokes'>
               <Nav.Link href='/documentation/endpoints/random-jokes'>
                 &emsp; Random Joke
+              </Nav.Link>
+            </Link>
+            <Link href='/documentation/endpoints/joke-count'>
+              <Nav.Link href='/documentation/endpoints/joke-count'>
+                &emsp; Joke Count
               </Nav.Link>
             </Link>
             <Link href='/documentation/endpoints/joke-by-id'>
@@ -62,7 +65,7 @@ export default function DocsNavigation() {
         body {
           padding: 0;
           margin: 0;
-          font-family: "Montserrat", sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         * {
