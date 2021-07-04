@@ -18,7 +18,10 @@ export default function Home() {
     <Container>
       <Head>
         <title>DadJokes.io</title>
-        <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='description'
+          content='We built this API to have an unlimited supply of dad jokes for our DadJokes application. If you find yourself overwhelmed, we organized this documentation into four major areas.'
+        />
       </Head>
       <Navigation />
       <main>
@@ -28,10 +31,13 @@ export default function Home() {
             marginBottom: '27em',
             marginTop: '13em',
           }}>
-          <Image src='/images/DadJokesLogo.svg' width='600em' height='100%' />
-          <blockquote>
-            "good as it gets" <br /> - Kegen Guyll
-          </blockquote>
+          <div>
+            <Image src='/images/Logo.svg' width='400rem' height='350rem' />
+            <blockquote>
+              "good as it gets" <br /> - Kegen Guyll
+            </blockquote>
+          </div>
+
           <div>
             <Link href='/documentation/getting-started'>
               <Button style={{ width: '10em', marginRight: '1em' }}>
