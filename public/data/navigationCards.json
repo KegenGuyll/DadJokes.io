@@ -5,6 +5,11 @@
     "documentationLink": "/documentation/endpoints/random-jokes"
   },
   {
+    "title": "Joke Count",
+    "description": "Returns number of jokes stored with dadjokes",
+    "documentationLink": "/documentation/endpoints/joke-count"
+  },
+  {
     "title": "Joke By Id",
     "description": "Returns a joke object with a specific ID.",
     "documentationLink": "/documentation/endpoints/joke-by-id"
