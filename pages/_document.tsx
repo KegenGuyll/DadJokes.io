@@ -12,32 +12,33 @@ class MyDocument extends Document {
         <Head>
           <link
             rel='stylesheet'
-            href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'></link>
-          <meta name='title' content='Dad Jokes' />
-          <meta name='description' content='One of the best Dad Jokes APIs' />
-
-          <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://dadjokes.io' />
-          <meta property='og:title' content='Dad Jokes' />
-          <meta
-            property='og:description'
-            content='One of the best Dad Jokes APIs'
+            href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'
           />
-          <meta property='og:image' content='/images/DadJokes.png' />
-
-          <meta property='twitter:card' content='summary_large_image' />
-          <meta property='twitter:url' content='https://dadjokes.io' />
-          <meta property='twitter:title' content='Dad Jokes' />
-          <meta
-            property='twitter:description'
-            content='One of the best Dad Jokes APIs'
-          />
-          <meta property='twitter:image' content='/images/DadJokes.png' />
           <link
             href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'
             rel='stylesheet'
           />
-          <link rel='shortcut icon' href='/favicon.ico' />
+          <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/apple-touch-icon.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='32x32'
+            href='/favicon-32x32.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='16x16'
+            href='/favicon-16x16.png'
+          />
+          <link rel='manifest' href='/site.webmanifest' />
+          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#000000' />
+          <meta name='msapplication-TileColor' content='#2d89ef' />
+          <meta name='theme-color' content='#ffffff' />
           <script
             dangerouslySetInnerHTML={{
               __html: `            (function(w,d,s,l,i){w[l] = w[l] || []{'gtm.start':
