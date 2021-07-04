@@ -37,6 +37,10 @@
   </url>
 
   <url>
+    <loc>https://dadjokes.io/documentation/endpoints/joke-count</loc>
+  </url>
+
+  <url>
     <loc>https://dadjokes.io/documentation/endpoints/random-jokes</loc>
   </url>
 
