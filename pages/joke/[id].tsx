@@ -59,7 +59,7 @@ const JokePageId: NextPage<Props> = ({ result }) => {
           property='og:url'
           content={`https://dadjokes.io/joke/${result._id}`}
         />
-        <meta name='twitter:title' content={result.setup} />
+        <meta name='twitter:title' content='DadJokes.io' />
         <meta name='twitter:description' content={result.punchline} />
         <meta name='twitter:creator' content='@DadjokesI' />
         <meta
