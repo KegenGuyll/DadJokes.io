@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Collapse, Nav } from 'react-bootstrap';
+import navigationCards from '../public/data/navigationCards.json';
 
 export default function DocsNavigation() {
   const [openEndpoint, setOpenEndpoint] = useState<boolean>(true);
@@ -31,31 +32,15 @@ export default function DocsNavigation() {
         <Nav.Link onClick={toggleEndpoints}>Endpoints</Nav.Link>
         <Collapse in={openEndpoint}>
           <div>
-            <Link href='/documentation/endpoints/random-jokes'>
-              <Nav.Link href='/documentation/endpoints/random-jokes'>
-                &emsp; Random Joke
-              </Nav.Link>
-            </Link>
-            <Link href='/documentation/endpoints/joke-count'>
-              <Nav.Link href='/documentation/endpoints/joke-count'>
-                &emsp; Joke Count
-              </Nav.Link>
-            </Link>
-            <Link href='/documentation/endpoints/joke-by-id'>
-              <Nav.Link href='/documentation/endpoints/joke-by-id'>
-                &emsp; Joke By ID
-              </Nav.Link>
-            </Link>
-            <Link href='/documentation/endpoints/joke-by-type'>
-              <Nav.Link href='/documentation/endpoints/joke-by-type'>
-                &emsp; Joke By Type
-              </Nav.Link>
-            </Link>
-            <Link href='/documentation/endpoints/search-jokes'>
-              <Nav.Link href='/documentation/endpoints/search-jokes'>
-                &emsp; Search Jokes
-              </Nav.Link>
-            </Link>
+            {navigationCards.map((card) => (
+              <Link href={card.documentationLink}>
+                <Nav.Link
+                  title={card.description}
+                  href={card.documentationLink}>
+                  &emsp; {card.title}
+                </Nav.Link>
+              </Link>
+            ))}
           </div>
         </Collapse>
       </Nav>

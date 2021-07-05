@@ -23,5 +23,10 @@
     "title": "Search Joke",
     "description": "Returns a list of jokes matching your term.",
     "documentationLink": "/documentation/endpoints/search-jokes"
+  },
+  {
+    "title": "Random Joke PNG",
+    "description": "Returns a random joke that contatins a dataurl",
+    "documentationLink": "/documentation/endpoints/random-joke-png"
   }
 ]
