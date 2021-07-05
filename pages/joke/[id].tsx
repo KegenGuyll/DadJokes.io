@@ -47,15 +47,24 @@ const JokePageId: NextPage<Props> = ({ result }) => {
           content='We built this API to have an unlimited supply of dad jokes for our DadJokes application. If you find yourself overwhelmed, we organized this documentation into four major areas.'
         />
         <meta property='og:title' content={result.setup} />
-        <meta property='og:description' content={result.punchline} />
-        <meta property='og:image' content={result.image} />
+        <meta
+          property='og:description'
+          content={`${result.setup} \n${result.punchline}`}
+        />
+        <meta
+          property='og:image'
+          content='https://dad-jokes-io-three.vercel.app/_next/image?url=%2Fimages%2FLogo.svg&w=640&q=75'
+        />
         <meta
           property='og:url'
           content={`https://dadjokes.io/joke/${result._id}`}
         />
         <meta name='twitter:title' content={result.setup} />
         <meta name='twitter:description' content={result.punchline} />
-        <meta name='twitter:image' content={result.image} />
+        <meta
+          name='twitter:image'
+          content='https://dad-jokes-io-three.vercel.app/_next/image?url=%2Fimages%2FLogo.svg&w=640&q=75'
+        />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
       <Navigation />
