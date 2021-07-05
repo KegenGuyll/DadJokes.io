@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
-import DocsLayout from "../../components/DocsLayout";
+import Link from 'next/link';
+import React from 'react';
+import { Jumbotron, Container } from 'react-bootstrap';
+import DocsLayout from '../../components/DocsLayout';
 
 export default function Documentation() {
   return (
@@ -12,15 +12,15 @@ export default function Documentation() {
             <h1>Getting Started</h1>
             <p>
               In order to get an API key for DadJokes.io, you need to create an
-              rapidAPI account then subscribe to{" "}
+              rapidAPI account then subscribe to
               <a href='https://rapidapi.com/KegenGuyll/api/dad-jokes'>
                 DadJokes
               </a>
             </p>
             <br />
-            <h3>Welcome to the DadJokes.io documentation!</h3>
+            <h2>Welcome to the DadJokes.io documentation!</h2>
             <p>
-              Now that you have an API let's checkout the{" "}
+              Now that you have an API let's checkout the
               <Link href='/documentation/endpoints/random-jokes'>
                 Random Joke Endpoint
               </Link>
